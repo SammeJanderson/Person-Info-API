@@ -27,10 +27,10 @@ public class Person {
     private Integer age;
 
     @Column(nullable = false, unique = true)
-    private Integer rg;
+    private String rg;
 
     @Column(nullable = false, unique = true)
-    private Integer cpf;
+    private String cpf;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
     private Address currentAddress;

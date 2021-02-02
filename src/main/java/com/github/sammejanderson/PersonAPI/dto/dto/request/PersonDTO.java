@@ -15,6 +15,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class PersonDTO {
 
     private Long id;
@@ -23,11 +24,13 @@ public class PersonDTO {
     @Size(min = 2, max = 100)
     private String name;
 
-    private Integer rg;
+    private String rg;
+
+    private Integer age;
 
     @CPF
     @NotEmpty
-    private Integer cpf;
+    private String cpf;
 
     @Valid
     @NotEmpty
