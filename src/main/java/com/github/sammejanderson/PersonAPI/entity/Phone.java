@@ -2,7 +2,7 @@
 package com.github.sammejanderson.PersonAPI.entity;
 
 
-import com.github.sammejanderson.PersonAPI.enums.Type;
+import com.github.sammejanderson.PersonAPI.enums.PhoneType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,6 +27,6 @@ public class Phone {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Type type;
+    private PhoneType type;
 
 }
