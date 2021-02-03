@@ -20,13 +20,12 @@ public class PersonDTO {
 
     private Long id;
 
-    @NotEmpty
     @Size(min = 2, max = 100)
     private String name;
 
-    private String rg;
-
     private Integer age;
+
+    private String rg;
 
     @CPF
     @NotEmpty
@@ -34,7 +33,7 @@ public class PersonDTO {
 
     @Valid
     @NotEmpty
-    private AddressDTO address;
+    private List<AddressDTO> addresses;
 
     @Valid
     @NotEmpty

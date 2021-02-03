@@ -32,8 +32,8 @@ public class Person {
     @Column(nullable = false, unique = true)
     private String cpf;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
-    private Address currentAddress;
+    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
+    private List<Address> addresses =null;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
     private List<Phone> phones = null;
