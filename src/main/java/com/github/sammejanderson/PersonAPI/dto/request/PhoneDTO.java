@@ -1,4 +1,4 @@
-package com.github.sammejanderson.PersonAPI.dto.dto.request;
+package com.github.sammejanderson.PersonAPI.dto.request;
 
 import com.github.sammejanderson.PersonAPI.enums.PhoneType;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
 package com.github.sammejanderson.PersonAPI.mapping;
 
-import com.github.sammejanderson.PersonAPI.dto.dto.request.PersonDTO;
+import com.github.sammejanderson.PersonAPI.dto.request.PersonDTO;
 import com.github.sammejanderson.PersonAPI.entity.Address;
 import com.github.sammejanderson.PersonAPI.entity.Person;
 import com.github.sammejanderson.PersonAPI.entity.Phone;
@@ -24,7 +24,7 @@ class PersonMapperTest {
                 List.of(new Phone(1L, 953958789, PhoneType.MOBILE)));
 
         //When
-        PersonDTO personDTO = PersonMapper.INSTANCE.PersonToPersonDTO(person);
+        PersonDTO personDTO = PersonMapper.INSTANCE.toDTO(person);
 
         //Then
         assertThat(personDTO).isNotNull();
